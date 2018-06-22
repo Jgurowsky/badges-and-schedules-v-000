@@ -11,9 +11,9 @@ end
 
 def assign_rooms(names)
   room_number = 1
-
+  greeting = []
   names each do |name|
-    "Hello, #{name}! You'll be assigned to room#{room_number}"
+    greeting << "Hello, #{name}! You'll be assigned to room#{room_number}"
 
   end
 end
