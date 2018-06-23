@@ -15,13 +15,16 @@ def batch_badge_creator(names)
 end
 
 def assign_rooms(names)
-  greeting = []
-  room_number = 1
-  names.each do |name|
-    greeting << "Hello, #{name}! You'll be assigned to room #{room_number}!"
-    room_number += 1
+  names.each_with_index.collect do |name, index|
+    "Hello, #{name}! You'll be assigned to room #{room_number}!"
   end
-  greeting
+  #greeting = []
+  #room_number = 1
+  #names.each do |name|
+    #greeting << "Hello, #{name}! You'll be assigned to room #{room_number}!"
+    #room_number += 1
+  #end
+  #greeting
 end
 
 def printer(names)
