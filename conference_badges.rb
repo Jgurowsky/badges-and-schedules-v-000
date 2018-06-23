@@ -1,10 +1,12 @@
-# Write your code here.
+#array that passes into methods below so file can run
 names = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
+#passes into next method
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
+#uses above method
 def batch_badge_creator(names)
   names.collect {|name| badge_maker(name)}
   #new_array = []
@@ -27,4 +29,5 @@ def printer(names)
   assign_rooms(names).each {|room| puts room}
 end
 
+#runs
 printer(names)
